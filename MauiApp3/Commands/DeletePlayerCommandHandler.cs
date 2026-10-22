@@ -6,9 +6,22 @@ using System.Text;
 
 namespace MauiApp3.Commands
 {
+    /*************************************************************************
+     * nazwa klasy:
+     * DeletePlayerCommandHandler
+     *
+     * opis klasy:
+     * Klasa pełni rolę handlera (procesora) odpowiedzialnego za obsługę
+     * polecenia DeletePlayerCommand. Odpowiada za wykonanie właściwej logiki
+     * biznesowej, czyli usunięcie wskazanego gracza z repozytorium danych.
+     *
+     * autor:
+     * Miłosz Szczypior
+     *************************************************************************/
     public class DeletePlayerCommandHandler
     {
         private readonly PlayerRepository _playerRepository;
+
         /*************************************************************************
         * nazwa funkcji:
         * DeletePlayerCommandHandler
@@ -33,7 +46,8 @@ namespace MauiApp3.Commands
         {
             _playerRepository = playerRepository;
         }
-         /*************************************************************************
+
+        /*************************************************************************
          * nazwa funkcji:
          * Handle
          *
@@ -60,7 +74,6 @@ namespace MauiApp3.Commands
             var player = _playerRepository.Players.FirstOrDefault(p => p.Id == command.Id);
 
             if (player != null) { _playerRepository.Players.Remove(player); }
-            
         }
     }
 }

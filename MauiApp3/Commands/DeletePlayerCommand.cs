@@ -4,10 +4,23 @@ using System.Text;
 
 namespace MauiApp3.Commands
 {
+    /*************************************************************************
+     * nazwa klasy:
+     * DeletePlayerCommand
+     *
+     * opis klasy:
+     * Klasa reprezentuje polecenie (Command) odpowiedzialne za przenoszenie
+     * danych niezbędnych do operacji usunięcia gracza z systemu. Działa jako
+     * struktura typu immutable (niezmienna).
+     *
+     * autor:
+     * Miłosz Szczypior
+     *************************************************************************/
     public class DeletePlayerCommand
     {
         public int Id { get; }
-         /*************************************************************************
+
+        /*************************************************************************
          * nazwa funkcji:
          * DeletePlayerCommand
          *

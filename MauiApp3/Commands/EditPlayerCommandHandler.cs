@@ -6,6 +6,18 @@ using System.Linq;
 
 namespace MauiApp3.Commands
 {
+    /*************************************************************************
+     * nazwa klasy:
+     * EditPlayerCommandHandler
+     *
+     * opis klasy:
+     * Klasa pełni rolę handlera (procesora) odpowiedzialnego za obsługę
+     * polecenia EditPlayerCommand. Odpowiada za wyszukanie gracza w repozytorium
+     * i aktualizację jego danych, takich jak nazwa oraz poziom.
+     *
+     * autor:
+     * Miłosz Szczypior
+     *************************************************************************/
     public class EditPlayerCommandHandler
     {
         private readonly PlayerRepository _playerRepository;
